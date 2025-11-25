@@ -11,7 +11,7 @@ type AAA struct {
 func main() {
 	r := gin.Default()
 	r.GET("/", func(c *gin.Context) {
-		c.String(200, "值：%v", "黄琴")
+		c.String(200, "值：%v", "琴")
 	})
 	r.GET("/json1", func(c *gin.Context) {
 		c.JSON(200, map[string]interface{}{
