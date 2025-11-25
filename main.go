@@ -28,7 +28,7 @@ func main() {
 	r.GET("/jsonp", func(c *gin.Context) { //jsonp，将callback值返回
 		a := &AAA{
 			Title:   "标题1--jsonp",
-			Desc:    "描述一下1",
+			Desc:    "描述一下",
 			Content: "测试内容",
 		}
 		c.JSONP(200, a)
